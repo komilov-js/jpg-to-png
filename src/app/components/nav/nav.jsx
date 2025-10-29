@@ -24,7 +24,7 @@ export default function Nav() {
       {/* Kompyuter menyu */}
       <div className="menu desktop">
         <Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link>
-        <Link href="/jpg-to-png" className={pathname === "/jpg-to-png" ? "active" : ""}>Convert PDF</Link>
+        <Link href="/jpg-png" className={pathname === "/jpg-png" ? "active" : ""}>Convert PDF</Link>
         <Link href="/remove-bg" className={pathname === "/remove-bg" ? "active" : ""}>Remove BG</Link>
       </div>
 
@@ -37,7 +37,7 @@ export default function Nav() {
       {menuOpen && (
         <div className="menu-mobile">
           <Link href="/" onClick={() => setMenuOpen(false)} className={pathname === "/" ? "active" : ""}>Home</Link>
-          <Link href="/jpg-png" onClick={() => setMenuOpen(false)} className={pathname === "/jpg-to-png" ? "active" : ""}>Convert PDF</Link>
+          <Link href="/jpg-png" onClick={() => setMenuOpen(false)} className={pathname === "/jpg-png" ? "active" : ""}>Convert PDF</Link>
           <Link href="/remove-bg" onClick={() => setMenuOpen(false)} className={pathname === "/remove-bg" ? "active" : ""}>Remove BG</Link>
         </div>
       )}
