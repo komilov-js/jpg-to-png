@@ -1,0 +1,36 @@
+.home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .home-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 100px;
+        // width: 100%;
+        padding: 20px;
+    }
+
+    .home-container>div {
+        flex: 1; // 🔹 ikkala blok teng kenglikda
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .home-container {
+        flex-direction: column;
+        // gap: 10px;
+        gap: 15px !important;
+    }
+}

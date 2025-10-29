@@ -1,0 +1,38 @@
+.remove-home {
+    display: flex;
+    flex-direction: column;
+    // gap: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+
+    .remove-home-text{
+        margin: 10px 0;
+        p{
+            font-size: 18px;
+            span{
+                background-color: red;
+                color: white;
+                padding:2px 5px ;
+                
+                border-radius: 12px;
+            }
+        }
+    }
+    .upload-image{
+        text-align: center;
+        // width: 100%;
+        padding: 10px;
+        border-radius: 12px;
+        margin: 20px 0px;
+        background-color: red;
+        cursor: pointer;
+        color: white;
+        a{
+            color: white;
+            background-color: transparent;
+           
+        }
+    }
+}

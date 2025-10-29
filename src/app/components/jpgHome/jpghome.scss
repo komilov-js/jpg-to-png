@@ -1,0 +1,115 @@
+.jpg-home {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .jpg-home-div {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .jpg-home-container {
+            border: 1px solid rgb(223, 221, 221);
+            width: 200px;
+            padding: 15px;
+            transition: 0.3s ease;
+            border-radius: 10px;
+            text-align: center;
+
+            p {
+                font-size: 11px;
+                color: grey;
+            }
+
+            &:hover {
+                border-color: black;
+                cursor: pointer;
+
+                svg {
+                    scale: 1.08;
+                }
+            }
+
+            svg {
+                width: 40px;
+                height: 40px;
+                transition: 0.2s ease;
+            }
+        }
+    }
+
+    a {
+        color: white;
+        background-color: transparent;
+        width: 100%;
+
+    }
+
+    .upload-image {
+        text-align: center;
+        // width: 100%;
+        padding: 10px;
+        border-radius: 12px;
+        width: 100% ;
+        margin: 20px 0px;
+        background-color: red;
+        cursor: pointer;
+        color: white;
+
+    }
+
+}
+
+.lorem {
+    font-size: 11px;
+    width: 400px;
+    // text-align: center;
+    margin: 0 auto;
+}
+
+/* 📱 Responsivlik */
+@media screen and (max-width: 600px) {
+    .jpg-home {
+        padding: 10px;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        .jpg-home-div {
+            gap: 10px;
+
+            .jpg-home-container {
+                width: 160px;
+                padding: 10px;
+
+                p {
+                    font-size: 10px;
+                }
+
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+
+    }
+
+    .lorem {
+        width: 90%;
+        font-size: 10px;
+    }
+}
